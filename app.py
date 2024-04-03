@@ -11,7 +11,7 @@ model = joblib.load("model.pkl")
 # Render the form page
 @app.route("/")
 def form():
-    return render_template("predict.html")
+    return render_template("index.html")
 
 
 # Handle form submission and provide prediction
