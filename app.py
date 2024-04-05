@@ -89,7 +89,7 @@ def predict():
 
     # X_test_scaled = scaler.transform([features])
     features= np.array(features)
-    prediction = model.predict(features.reshape(1,-1))
+    prediction = model.predict(features.reshape(1,-1).astype("float"))
     # print(prediction)
     
     if(prediction == [1]):
