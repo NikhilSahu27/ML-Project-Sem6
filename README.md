@@ -1,2 +1,2 @@
 # ML-Project-Sem6
-Sem 6
+Project for online food delivery feedback prediction using random forest
