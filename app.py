@@ -94,13 +94,15 @@ def predict():
     
     if(prediction == [1]):
         ans = "Positive"
+        feed = "Customer is more likely to order again."
     else:
         ans="Negative"
+        feed = "Customer may not order again."
     # Render the result page with prediction
-    return render_template("result.html", prediction=ans)
+    return render_template("result.html", prediction=ans,feed=feed)
 
 
-print("Hello")
+# print("Hello")
 
 if __name__ == "__main__":
     app.run(debug=False)
